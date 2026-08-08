@@ -1,5 +1,8 @@
 # comfy-custom
 
+[![CI](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml) [![Tests](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/tests.yml/badge.svg)](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/tests.yml) [![Ruff](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml) [![mypy](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/comfy-custom/actions/workflows/ci.yml)
+
+
 Fork of ComfyUI (v0.27.0) with custom nodes, API extensions, execution modifications, and deployment tooling.
 
 ## About
