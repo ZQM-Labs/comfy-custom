@@ -1,7 +1,8 @@
-from PIL import Image
-import numpy as np
-import comfy.utils
 import time
+
+import comfy.utils
+import numpy as np
+from PIL import Image
 
 #You can use this node to save full size images through the websocket, the
 #images will be sent in exactly the same format as the image previews: as
@@ -26,12 +27,10 @@ class SaveImageWebsocket:
 
     def save_images(self, images):
         pbar = comfy.utils.ProgressBar(images.shape[0])
-        step = 0
-        for image in images:
+        for step, image in enumerate(images):
             i = 255. * image.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
             pbar.update_absolute(step, images.shape[0], ("PNG", img, None))
-            step += 1
 
         return {}
 
