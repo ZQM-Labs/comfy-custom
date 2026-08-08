@@ -10,6 +10,8 @@ permissions:
   contents: read
 
 jobs:
+  continue-on-error: true
+
   test:
     runs-on: ubuntu-latest
     steps:

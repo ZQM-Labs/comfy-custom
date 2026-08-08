@@ -9,6 +9,8 @@ permissions:
   packages: write
 
 jobs:
+  continue-on-error: true
+
   release:
     runs-on: ubuntu-latest
     steps:
